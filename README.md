@@ -1,2 +1,2 @@
 # Ticketing_Project
-This is project microservices Web app - v1- 
+This is a simple microservices web app - v1 -
