@@ -1,0 +1,23 @@
+.active {
+    border: 1px #fff solid !important;
+    }
+    
+    .navb{
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .bar {
+        color: #fff;
+        font-size: 30px;
+    }
+    @media screen and (max-width: 1024px)  {
+    
+    .navb{
+        display: none !important;
+    }
+    .menu {
+        display: block;
+    }
+      }
