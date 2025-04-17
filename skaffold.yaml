@@ -1,0 +1,46 @@
+apiVersion: skaffold/v4beta11
+kind: Config
+metadata:
+  name: app-code
+build:
+  artifacts:
+    - image: radwakelany123/auth1
+      context: auth
+      docker:
+        dockerfile: Dockerfile
+    - image: radwakelany123/client
+      context: client
+      docker:
+        dockerfile: Dockerfile
+    - image: radwakelany123/tickets
+      context: tickets
+      docker:
+        dockerfile: Dockerfile
+    - image: radwakelany123/orders
+      context: orders
+      docker:
+        dockerfile: Dockerfile
+    - image: radwakelany123/expiration
+      context: expiration
+      docker:
+        dockerfile: Dockerfile
+    - image: radwakelany123/payments
+      context: payments
+      docker:
+        dockerfile: Dockerfile
+manifests:
+  rawYaml:
+    - infra/k8s/auth-deploy.yaml
+    - infra/k8s/client-deploy.yaml
+    - infra/k8s/ingress-srv.yaml
+    - infra/k8s/mongodb-auth-deploy.yaml
+    - infra/k8s/mongodb-tickets-deploy.yaml
+    - infra/k8s/tickets-deploy.yaml
+    - infra/k8s/nats-deploy.yaml
+    - infra/k8s/orders-deploy.yaml
+    - infra/k8s/mongodb-orders-deploy.yaml
+    - infra/k8s/expiration-deploy.yaml
+    - infra/k8s/expiration-redis-deploy.yaml
+    - infra/k8s/payments-deploy.yaml
+    - infra/k8s/mongodb-payments-deploy.yaml
+

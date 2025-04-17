@@ -1,0 +1,13 @@
+auth/node_modules
+auth/src/test
+.vscode
+client/node_modules
+common/node_modules
+expiration/node_modules
+nats/node_modules
+orders/node_modules
+orders/src/test
+payments/node_modules
+payments/src/test
+tickets/node_modules
+tickets/src/test
