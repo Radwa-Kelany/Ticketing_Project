@@ -10,5 +10,6 @@ orders/node_modules
 orders/src/test
 payments/node_modules
 payments/src/test
+payments/src/strip.ts
 tickets/node_modules
 tickets/src/test
